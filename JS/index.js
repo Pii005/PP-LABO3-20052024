@@ -188,8 +188,7 @@ function addRowClickListener(row) {//se encarga de poner la caracteristica de cl
     });
 }
 
-async function editarTabla(data)
-{
+async function editarTabla(data) {
     form.querySelector("#nombre").value = data[1];
     form.querySelector("#tamaño").value = data[2];
     form.querySelector("#masa").value = data[3];
@@ -202,10 +201,9 @@ async function editarTabla(data)
         document.querySelector("#pAnillo[value='Sí']").checked = true;
     } 
     form.querySelector("#composicion").value = data[8];
-    mostrarBotones();
-    // Set the radio button for transaccion
-    
+    mostrarBotones(); // Mostrar botones al editar
 }
+
 
 function escuchandoBtnBack() {
     const btn = document.getElementById("btn-back");
@@ -221,7 +219,7 @@ function escuchandoBtnBack() {
                 await limpiar(KEY_STORAGE);
                 ocultarSpinner();
                 actualizarFormulario();
-                
+                ocultarBotones(); // Ocultar botones al dejar de editar
             } catch (error) {
                 alert(error);
             }
