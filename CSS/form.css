@@ -1,0 +1,117 @@
+.container-informacion
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-size: 13px;
+
+}
+
+.container-informacion form
+{
+    
+    width: 600px;
+    
+}
+
+.container-informacion input,
+.container-informacion select 
+{
+    width: 100%;
+    height:25px;
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid rgba(219, 216, 216);
+    background-color:  transparent;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(219, 216, 216);
+}
+
+.container-informacion text-grande
+{
+    height: 30px;
+}
+
+
+.info-radio {
+    display: flex;
+    flex-direction:row; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center;
+    
+}
+
+.radio-title {
+    display: flex;
+    margin-right: 80px; /* Espacio entre cada grupo */
+    margin-left: 70px;
+    font-size: 16px;
+}
+
+.radio-title input[type="radio"] {
+    margin-left: 5px; /* Espacio entre el radio y el label */
+}
+
+
+
+
+
+.container-informacion .button-container {
+    display: flex; /* Hace que los botones se alineen horizontalmente */
+    justify-content: space-between; /* Distribuye el espacio entre los botones */
+    margin-top: 20px; /* Espacio superior entre los botones y los campos */
+}
+
+.button {
+    /* Aquí está el estilo común para todos los botones */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.green-button {
+    background-color: #1ebb42;
+}
+
+.green-button:hover {
+    background-color: #218838;
+}
+
+.red-button {
+    background-color: #bb1e1e;
+}
+
+.red-button:hover {
+    background-color: #882121;
+}
+
+.editar-button {
+    display: none;
+    background-color: #abad29;
+}
+
+.editar-button:hover {
+    background-color: #868821;
+}
+
+.back-button {
+    display: none;
+    background-color: #292bad;
+}
+
+.editar-button:hover {
+    background-color: #212888;
+}
+
+
+

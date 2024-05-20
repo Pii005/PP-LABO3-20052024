@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABM de Planetas.</title>
+
+    <link rel="stylesheet" href="./CSS/head.css">
+    <link rel="stylesheet" href="./CSS/form.css">
+    <link rel="stylesheet" href="./CSS/spinner.css">
+    <link rel="stylesheet" href="./CSS/tabla.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+
+
+    <link rel="icon" type="image/x-icon" href="assets/logo.svg" />
+
+    <script src="./JS/index.js" type="module" defer></script>
+</head>
+<body>
+    <header class="barra">
+        <div class="barra-elementos">
+            <img src="./assets/logo.svg" alt="Logo Principal" />
+            <nav>
+                <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Anuncio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        
+
+    </header>
+
+    
+    <section class="container-informacion">
+        <form action="" method="post" id="form-items">
+            <div>
+                <fieldset class="Información-titulo">
+                    <legend>Información Del Planeta</legend>
+                    <h3>Nombre</h3>
+                    <input type="text" required name="nombre" placeholder="Ingrese Nombre" id="nombre">
+    
+                    <div class="info-descripcion">
+                        <h3>Tamaño</h3>
+                        <input type="text" required name="tamaño" placeholder="Tamaño" id="tamaño">
+                    </div>
+    
+                    <div class="info-descripcion">
+                        <h3>Masa</h3>
+                        <input type="text" required name="masa" placeholder="Masa" id="masa">
+                    </div>
+    
+                    <div class="info-descripcion">
+                        <h3>Tipo</h3>
+                        <select required name="tipo" id="tipo">
+                            <option value="">Seleccione un tipo</option>
+                            <option value="rocoso">Rocoso</option>
+                            <option value="gaseoso">Gaseoso</option>
+                            <option value="helado">Helado</option>
+                            <option value="enano">Enano</option>
+                        </select>
+                    </div>
+    
+                    <div class="info-descripcion">
+                        <h3>Distancia al Sol</h3>
+                        <input type="text" required name="distancia" placeholder="Distancia al Sol" id="distancia">
+                    </div>
+    
+                    <div class="info-radio" required>
+                        <h3>Presenta Vida</h3>
+                        <div class="radio-title">
+                            <label for="siVida">Sí</label>
+                            <input type="radio" name="presentaVida" id="pVida" value="Sí">
+                        </div>
+
+                    </div>
+    
+                    <div class="info-radio" required>
+                        <h3>Presenta Anillo</h3>
+                        <div class="radio-title">
+                            <label for="siAnillo">Sí</label>
+                            <input type="radio" name="presentaAnillo" id="pAnillo" value="Sí">
+                        </div>
+                    </div>
+
+                    <div class="info-descripcion text-grande">
+                        <h3>composicion</h3>
+                        <input type="text" required name="composicion" placeholder="Ingrese composicion" id="composicion" maxlength="100">
+                    </div>
+
+
+                </fieldset>
+            </div>
+            <div class="button-container">
+                <button type="submit" class="green-button button" id="btn-save-all">Guardar</button>
+                <button type="button" class="red-button button" id="btn-delete-all">Eliminar</button>
+                <button type="button" class="editar-button button" id="btn-edit">Editar</button>
+                <button type="button" class="back-button button" id="btn-back">volver</button>
+            </div>
+            
+        </form>
+    </section>
+    <div id="spinner" class="spinner">
+        <img src="./assets/rueda.gif" alt="Spinner" class="spinner-gif">
+    </div>
+
+    <div class="container-table tabla">
+        <table id="table-items" class="table-items table-stripped tabla">
+            <thead>
+                <tr class="tabla">
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Tamaño</th>
+                    <th>Masa</th>
+                    <th>Tipo</th>
+                    <th>Distancia al Sol</th>
+                    <th>Presenta Vida</th>
+                    <th>Presenta Anillo</th>
+                    <th>Composición</th>
+                
+                </tr>
+            </thead>
+
+            <tbody class="tbodyx"></tbody>
+            </table>
+        </div>
+
+
+
+    <footer class="fondo">
+        <nav>
+            <ul class="fondo-elementos">
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Anuncio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <p>Todos los derechos reservados <date>2024</date> &copy;</p>
+        </footer>
+
+
+</body>
+</html>

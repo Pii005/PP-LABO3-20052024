@@ -1,0 +1,51 @@
+footer
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.fondo
+{
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 20px;
+    
+    display: flex; /* Aseguramos que sea un contenedor flex */
+    justify-content: space-between; /* Distribuye los elementos hijos con espacio entre ellos */
+    align-items: center;
+    margin-top: 25px;
+}
+
+
+.fondo nav ul{
+    text-decoration: none;
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+
+    justify-content: left;
+}
+
+.fondo nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 15px;
+}
+
+
+.fondo p
+{
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 15px;
+}
+
+
+

@@ -1,0 +1,16 @@
+.spinner {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    
+}
+
+
+.spinner-gif
+{
+    width: 75px; 
+    height: 75px;
+}
+
+

@@ -1,0 +1,45 @@
+.container-informacion
+{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.container-table
+{
+    display: flex; /* Aseguramos que sea un contenedor flex */
+    justify-content: center; /* Distribuye los elementos hijos con espacio entre ellos */
+    margin-bottom: 125px;
+    
+}
+
+
+.table-items {
+    width: 60%;
+    
+    border-collapse: collapse;
+}
+
+.table-items th, .table-items td {
+    border: 2px solid rgb(0, 0, 0); /* Borde rosa para todas las celdas */
+    padding: 8px;
+    text-align: left;
+}
+
+.table-items th {
+    background-color: rgb(210, 77, 77); /* Fondo amarillo para el encabezado */
+    border: 2px solid rgb(210, 77, 77); /* Borde amarillo para el encabezado */
+}
+
+.table-items tbody tr {
+    border: 2px solid red; /* Borde rojo para las filas del cuerpo */
+}
+
+.table-items tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo alternante para mejorar legibilidad */
+}
+
+.table-items tbody tr:hover {
+    background-color: #ddd; /* Color de fondo al pasar el ratón */
+}
+
