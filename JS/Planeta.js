@@ -1,11 +1,8 @@
-class planeta
-{
+import { PlanetaBase } from "./PlanetaBase.js";
+
+class Planeta extends PlanetaBase {
     constructor(id, nombre, tamaño, masa, tipo, distancia, presentaVida, anillo, composicion) {
-        this.id = id;
-        this.nombre = nombre;
-        this.tamaño = tamaño;
-        this.masa = masa;
-        this.tipo = tipo;
+        super(id, nombre, tamaño, masa, tipo); // Llamada al constructor de la clase padre PlanetaBase
         this.distancia = distancia;
         this.presentaVida = presentaVida;
         this.anillo = anillo;
@@ -16,4 +13,4 @@ class planeta
 
 
 
-export { planeta };
+export { Planeta };
