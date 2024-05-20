@@ -27,12 +27,12 @@
 }
 
 .table-items th {
-    background-color: rgb(210, 77, 77); /* Fondo amarillo para el encabezado */
-    border: 2px solid rgb(210, 77, 77); /* Borde amarillo para el encabezado */
+    background-color: rgb(100, 154, 204); /* Fondo amarillo para el encabezado */
+    border: 2px solid rgb(66, 138, 206); /* Borde amarillo para el encabezado */
 }
 
 .table-items tbody tr {
-    border: 2px solid red; /* Borde rojo para las filas del cuerpo */
+    border: 2px solid rgb(212, 121, 121); /* Borde rojo para las filas del cuerpo */
 }
 
 .table-items tbody tr:nth-child(even) {
