@@ -1,4 +1,4 @@
-import { planeta } from "./Planeta.js";
+import { Planeta } from "./Planeta.js";
 import { leer, escribir, limpiar, jsonToObject, objectToJson } from "./Local-storage.js";
 import { mostrarSpinner, ocultarSpinner } from "./spinner.js";
 import { mostrarBotones, ocultarBotones} from "./botones.js";
@@ -29,7 +29,7 @@ async function loadItems() {
     let object = jsonToObject(str) || [];
 
     object.forEach(obj => {
-        const model = new planeta(
+        const model = new Planeta(
             obj.id,
             obj.nombre,
             obj.tamaño,
@@ -96,7 +96,7 @@ function escuchandoForm() {
     form.addEventListener("submit", async (e) => {
         e.preventDefault();
 
-        const model = new planeta(
+        const model = new Planeta(
             crearId(),
             form.querySelector("#nombre").value,
             form.querySelector("#tamaño").value,
