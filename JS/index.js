@@ -71,6 +71,8 @@ function rellenarTabla() {
         eliminarBtn.textContent = "Eliminar";
         eliminarBtn.classList.add("red-button");
         eliminarBtn.addEventListener("click", () => eliminarItem(index));
+        
+
         eliminarCelda.appendChild(eliminarBtn);
         nuevaFila.appendChild(eliminarCelda);
         addRowClickListener(nuevaFila);
@@ -212,20 +214,18 @@ function escuchandoBtnBack() {
         const rta = confirm('¿Desea dejar de editar?');
 
         if (rta) {
-            items.splice(0, items.length);
-
             try {
                 mostrarSpinner();
-                await limpiar(KEY_STORAGE);
-                ocultarSpinner();
                 actualizarFormulario();
                 ocultarBotones(); // Ocultar botones al dejar de editar
+                ocultarSpinner();
             } catch (error) {
                 alert(error);
             }
         }
     });
 }
+
 
 
 
